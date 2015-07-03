@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44BE5D0B-11B0-4401-8392-65DFB1D5ECA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoordTransferUI</RootNamespace>
+    <AssemblyName>CoordTransferUI</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.3.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\软件\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=9.2.3.1380, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCal4Param.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCal4Param.Designer.cs">
+      <DependentUpon>FrmCal4Param.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDefineCoordSys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDefineCoordSys.Designer.cs">
+      <DependentUpon>FrmDefineCoordSys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSet4Param.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSet4Param.Designer.cs">
+      <DependentUpon>FrmSet4Param.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShpTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShpTransfer.designer.cs">
+      <DependentUpon>FrmShpTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSet7Param.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSet7Param.Designer.cs">
+      <DependentUpon>FrmSet7Param.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCal7Param.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCal7Param.Designer.cs">
+      <DependentUpon>FrmCal7Param.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetCoordSys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetCoordSys.Designer.cs">
+      <DependentUpon>FrmSetCoordSys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCal4Param.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCal4Param.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDefineCoordSys.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDefineCoordSys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSet4Param.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSet4Param.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShpTransfer.resx">
+      <DependentUpon>FrmShpTransfer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSet7Param.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSet7Param.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCal7Param.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCal7Param.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetCoordSys.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSetCoordSys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetPrjParamter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSetPrjParamter.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FrmSetPrjParamter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetPrjParamter.Designer.cs">
+      <DependentUpon>FrmSetPrjParamter.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoordTransfer\CoordTransfer.csproj">
+      <Project>{CFEE8BAF-20EE-4B98-998A-301C0BC412BC}</Project>
+      <Name>CoordTransfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeneralMatrix\Matrix.csproj">
+      <Project>{704F8E37-7770-4701-805C-FC054E2ACDBB}</Project>
+      <Name>Matrix</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

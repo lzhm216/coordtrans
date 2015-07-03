@@ -1,0 +1,7 @@
+E:\workspace\Csharp\CoordTransfer1213\CoordTransfer\bin\Debug\CoordTransfer.dll
+E:\workspace\Csharp\CoordTransfer1213\CoordTransfer\bin\Debug\CoordTransfer.pdb
+E:\workspace\Csharp\CoordTransfer1213\CoordTransfer\bin\Debug\GeneralMatrix.dll
+E:\workspace\Csharp\CoordTransfer1213\CoordTransfer\bin\Debug\GeneralMatrix.pdb
+E:\workspace\Csharp\CoordTransfer1213\CoordTransfer\obj\Debug\CoordTransfer.csprojResolveAssemblyReference.cache
+E:\workspace\Csharp\CoordTransfer1213\CoordTransfer\obj\Debug\CoordTransfer.dll
+E:\workspace\Csharp\CoordTransfer1213\CoordTransfer\obj\Debug\CoordTransfer.pdb

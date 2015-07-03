@@ -1,0 +1,5 @@
+E:\lzhm\CoordTransfer\GeneralMatrix\bin\Debug\GeneralMatrix.dll
+E:\lzhm\CoordTransfer\GeneralMatrix\bin\Debug\GeneralMatrix.pdb
+E:\lzhm\CoordTransfer\GeneralMatrix\obj\Debug\ResolveAssemblyReference.cache
+E:\lzhm\CoordTransfer\GeneralMatrix\obj\Debug\GeneralMatrix.dll
+E:\lzhm\CoordTransfer\GeneralMatrix\obj\Debug\GeneralMatrix.pdb

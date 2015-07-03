@@ -1,0 +1,4 @@
+E:\workspace\Csharp\CoordTransfer1213\GeneralMatrix\bin\Debug\GeneralMatrix.dll
+E:\workspace\Csharp\CoordTransfer1213\GeneralMatrix\bin\Debug\GeneralMatrix.pdb
+E:\workspace\Csharp\CoordTransfer1213\GeneralMatrix\obj\Debug\GeneralMatrix.dll
+E:\workspace\Csharp\CoordTransfer1213\GeneralMatrix\obj\Debug\GeneralMatrix.pdb
